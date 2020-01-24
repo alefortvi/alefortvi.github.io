@@ -313,7 +313,7 @@ if (SNAP === null || SNAP === undefined){
 }
 SNAP.addEventListener('click', function(){
 
-    SnapCANVAS = document.getElementById("repuesto");
+    var SnapCANVAS = document.getElementById("repuesto");
     // var SN = AkLoadImage(rep,1);
     // AkLoadOnCanvas(SN,SnapCANVAS);
 
@@ -322,8 +322,8 @@ SNAP.addEventListener('click', function(){
         imageFoo.src = dataUrl;
 
 // Style your image here
-    imageFoo.style.width = '256px';
-    imageFoo.style.height = '256px';
+    imageFoo.width = SnapCANVAS.offsetWidth;
+    imageFoo.height = SnapCANVAS.offsetHeight;
     var container = document.getElementById("containerSnap");
 
 
