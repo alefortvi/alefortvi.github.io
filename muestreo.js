@@ -318,7 +318,7 @@ SNAP.addEventListener('click', function(){
     // AkLoadOnCanvas(SN,SnapCANVAS);
 
         dataUrl = SnapCANVAS.toDataURL();
-        imageFoo = document.createElement('img');
+        imageFoo = document.getElementById("finalSnap");
         imageFoo.src = dataUrl;
 
 // Style your image here
