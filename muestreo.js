@@ -11,7 +11,7 @@ function drawVideo(v,c,bc,w,h) {
         var rw = (document.getElementById("Rw").value)^0;
         var rh =((document.getElementById("Rh").value)*1.33)^0;
 
-        document.getElementById("asd").innerHTML = rh;
+        // document.getElementById("asd").innerHTML = rh;
 
         var R1 = AkCreateROI(rx,ry,rw,rh);
 
@@ -300,7 +300,7 @@ rep.addEventListener('mousemove', function(evt) {
     }
     c.style.backgroundColor = "rgb("+r+","+g+","+b+")";
     document.getElementById('Texto').innerHTML = "RGB: "+r+", "+g+", "+b+
-    "</br>"+"los valores de estos canales son internos al objeto";
+    "</br>"+"Internal values";
 
 
 
