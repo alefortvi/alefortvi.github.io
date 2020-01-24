@@ -317,6 +317,18 @@ SNAP.addEventListener('click', function(){
     var SN = AkLoadImage(rep,1);
     AkLoadOnCanvas(SN,SnapCANVAS);
 
+        dataUrl = SnapCANVAS.toDataURL(),
+        imageFoo = document.createElement('img');
+        imageFoo.src = dataUrl;
+
+// Style your image here
+    imageFoo.style.width = '256px';
+    imageFoo.style.height = '256px';
+    var container = document.getElementById("containerSnap");
+
+
+// After you are done styling it, append it to the BODY element
+    container.appendChild(imageFoo);
 
 
 });
