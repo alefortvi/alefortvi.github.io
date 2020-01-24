@@ -314,10 +314,10 @@ if (SNAP === null || SNAP === undefined){
 SNAP.addEventListener('click', function(){
 
     SnapCANVAS = document.getElementById("repuesto");
-    var SN = AkLoadImage(rep,1);
-    AkLoadOnCanvas(SN,SnapCANVAS);
+    // var SN = AkLoadImage(rep,1);
+    // AkLoadOnCanvas(SN,SnapCANVAS);
 
-        dataUrl = SnapCANVAS.toDataURL(),
+        dataUrl = SnapCANVAS.toDataURL();
         imageFoo = document.createElement('img');
         imageFoo.src = dataUrl;
 
